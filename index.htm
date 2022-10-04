@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+    <script src="https://unpkg.com/vue@next"></script>
+<body>
+    <div id="app">
+        <h2>String duplication</h2>
+        <input id="inputWord" type="text" v-model="word" placeholder="Type a word">
+        <input id="inputNumber" type="text" v-model="number" placeholder="Type a number">
+        <button id="button" type="button" v-on:click="repeatWord(number)">Do It!</button>         
+
+        <div id="outputField">{{ message }}</div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
